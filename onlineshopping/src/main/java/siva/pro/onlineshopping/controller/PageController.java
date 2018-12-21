@@ -48,7 +48,7 @@ public class PageController {
 	/*
 	 * Methods to load all the products based on category
 	 */
-	@RequestMapping(value = {"/show/all/products"})
+	@RequestMapping(value = "/show/all/products")
 	public ModelAndView showAllProducts() {
 		
 		ModelAndView mv = new ModelAndView("page");
@@ -62,7 +62,7 @@ public class PageController {
 		return mv;		
 	}
 	
-	@RequestMapping(value = {"/show/category/{id}/products"})
+	@RequestMapping(value = "/show/category/{id}/products")
 	public ModelAndView showCategoryProducts(@PathVariable("id") int id) {
 		
 		ModelAndView mv = new ModelAndView("page");
